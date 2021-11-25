@@ -48,8 +48,8 @@ void setup() {
   pinMode(motor2_enb, OUTPUT);
 
   // set the speed to 40-45%
-  analogWrite(motor1_ena, 100);
-  analogWrite(motor2_enb, 100);
+  analogWrite(motor1_ena, 150);
+  analogWrite(motor2_enb, 150);
   
   // set the initial direction of the motor
   digitalWrite(motor1pin1, HIGH);
@@ -132,10 +132,10 @@ void change_direction(){
     digitalWrite(motor2pin2, LOW);
     delay(1000);
 
-    // set the power of motor lower
-    // set the speed to 30%
-    analogWrite(motor1_ena, 75);
-    analogWrite(motor2_enb, 75);
+//    // set the power of motor lower
+//    // set the speed to 30%
+//    analogWrite(motor1_ena, 75);
+//    analogWrite(motor2_enb, 75);
     //reverse the direction of motor
     digitalWrite(motor1pin1, LOW);
     digitalWrite(motor1pin2, HIGH);
@@ -155,9 +155,9 @@ void change_direction(){
     delay(1000);
 
     // set the power of motor higher
-    // set the speed to 80%
-    analogWrite(motor1_ena, 210);
-    analogWrite(motor2_enb, 210);
+//    // set the speed to 80%
+//    analogWrite(motor1_ena, 255);
+//    analogWrite(motor2_enb, 255);
     //reverse the direction of motor
     
     digitalWrite(motor1pin1, HIGH);
